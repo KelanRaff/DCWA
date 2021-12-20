@@ -1,0 +1,16 @@
+<table border="1">
+    <tr>
+        <th id="List_Student_Action"> Module ID </th>
+        <th id="List_Student_Name"> Name </th>
+        <th id="List_Student_Credits">Credits</th>
+    </tr>
+    <% studentModules.forEach((studentModule) => { %>
+    <tr>
+        <td><%= studentModule.sid %></td>
+        <td><%= studentModule.name %></td>
+        <td><%= studentModule.gpa %></td>
+        <% }) %>
+    </tr>
+ 
+    </table>
+    <a href="/">Home</a>

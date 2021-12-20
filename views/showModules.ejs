@@ -1,0 +1,21 @@
+
+<table border="1">
+    <tr>
+        <th id="Modules_Student_MID"> Module ID </th>
+        <th id="Modules_Student_Name"> Name </th>
+        <th id="Modules_Student_Credits">Credits</th>
+        <th id="Modules_Student_Update"> Update </th>
+        <th id="Modules_Student_Students"> Students </th>
+    </tr>
+    <% modules.forEach((module) => { %>
+    <tr>
+        <td><%= module.mid %></td>
+        <td><%= module.name %></td>
+        <td><%= module.credits %></td>
+        <td><a href="/modules/edit">Update</a></td>
+        <td><a href = <%= "/modules/" + module.mid %>>List</a></td>
+        <% }) %>
+    </tr>
+ 
+    </table>
+    <a href="/">Home</a>

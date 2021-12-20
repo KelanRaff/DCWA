@@ -1,0 +1,18 @@
+<input type="button" onclick="window.location.href='/addLecturer';" value="Add Lecturer">
+
+<table border="1">
+    <tr>
+        <th id="Modules_Student_MID"> Lecturer ID </th>
+        <th id="Modules_Student_Name"> Name </th>
+        <th id="Modules_Student_Credits"> Dept </th>
+    </tr>
+    <% lecturers.forEach((lecturer) => { %>
+    <tr>
+        <td><%= lecturer._id %></td>
+        <td><%= lecturer.name %></td>
+        <td><%= lecturer.dept %></td>
+        <% }) %>
+    </tr>
+ 
+    </table>
+    <a href="/">Home</a>
